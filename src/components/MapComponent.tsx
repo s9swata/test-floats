@@ -45,22 +45,22 @@ export default function MapComponent({ onFloatClick }: MapComponentProps) {
     { id: 8, position: [17.6868, 83.2185] as [number, number], name: "Float 8" },
     { id: 9, position: [21.1702, 72.8311] as [number, number], name: "Float 9" },
     { id: 10, position: [12.9716, 77.5946] as [number, number], name: "Float 10" },
-    { id: 11, position: [18.5204, 73.8567] as [number, number], name: "Float 11" },
-    { id: 12, position: [16.7050, 74.2433] as [number, number], name: "Float 12" },
-    { id: 13, position: [14.5203, 75.7223] as [number, number], name: "Float 13" },
-    { id: 14, position: [10.8505, 76.2711] as [number, number], name: "Float 14" },
-    { id: 15, position: [9.9312, 76.2673] as [number, number], name: "Float 15" },
-  ];
-
-  return (
-    <MapContainer
-      center={[20.5937, 78.9629]}
-      zoom={5}
-      style={{ height: '100%', width: '100%' }}
-      className="z-0"
-    >
-      <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    { id: 11, position: [10.0, 75.0] as [number, number], name: "Float 11" },
+    { id: 12, position: [8.5, 77.2] as [number, number], name: "Float 12" },
+    { id: 13, position: [6.8, 79.5] as [number, number], name: "Float 13" },
+    { id: 14, position: [4.2, 73.8] as [number, number], name: "Float 14" },
+    { id: 15, position: [2.1, 75.3] as [number, number], name: "Float 15" },
+    { id: 16, position: [0.5, 73.9] as [number, number], name: "Float 16" },
+    { id: 17, position: [-1.8, 74.7] as [number, number], name: "Float 17" },
+    { id: 18, position: [-3.5, 72.1] as [number, number], name: "Float 18" },
+    { id: 19, position: [-5.2, 75.8] as [number, number], name: "Float 19" },
+    { id: 20, position: [-7.1, 73.4] as [number, number], name: "Float 20" },
+    { id: 21, position: [-9.3, 76.2] as [number, number], name: "Float 21" },
+    { id: 22, position: [-11.7, 74.9] as [number, number], name: "Float 22" },
+    { id: 23, position: [-13.2, 77.6] as [number, number], name: "Float 23" },
+    { id: 24, position: [-15.8, 75.1] as [number, number], name: "Float 24" },
+    { id: 25, position: [-18.4, 78.3] as [number, number], name: "Float 25" },
+    { id: 26, position: [-20.9, 76.7] as [number, number], name: "Float 26" },
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       {floats.map((float) => (
