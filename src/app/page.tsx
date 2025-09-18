@@ -72,7 +72,14 @@ export default function ChatInterface() {
   }, [inputValue]);
 
   return (
-    <div className="flex flex-col h-screen bg-gray-900 text-white">
+    <div className="flex h-screen bg-gray-900 text-white">
+      {/* Left side - empty space */}
+      <div className="flex-1 bg-gray-900">
+        {/* This space can be used for other content */}
+      </div>
+      
+      {/* Right side - chat interface */}
+      <div className="w-[30%] flex flex-col border-l border-gray-700">
       {/* Header */}
       <header className="border-b border-gray-700 p-4">
         <h1 className="text-xl font-semibold text-center">FloatChat</h1>
@@ -89,7 +96,7 @@ export default function ChatInterface() {
             </div>
           </div>
         ) : (
-          <div className="max-w-4xl mx-auto">
+          <div className="w-full">
             {messages.map((message) => (
               <div
                 key={message.id}
@@ -97,7 +104,7 @@ export default function ChatInterface() {
                   message.role === 'assistant' ? 'bg-gray-800' : 'bg-gray-900'
                 }`}
               >
-                <div className="max-w-3xl mx-auto flex gap-4">
+                <div className="px-4 flex gap-4">
                   <div className="flex-shrink-0">
                     <div
                       className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-semibold ${
@@ -121,7 +128,7 @@ export default function ChatInterface() {
             ))}
             {isLoading && (
               <div className="py-6 px-4 bg-gray-800">
-                <div className="max-w-3xl mx-auto flex gap-4">
+                <div className="px-4 flex gap-4">
                   <div className="flex-shrink-0">
                     <div className="w-8 h-8 rounded-full bg-green-600 flex items-center justify-center text-sm font-semibold text-white">
                       AI
@@ -144,7 +151,7 @@ export default function ChatInterface() {
 
       {/* Input Area */}
       <div className="border-t border-gray-700 p-4">
-        <div className="max-w-4xl mx-auto">
+        <div className="w-full">
           <form onSubmit={handleSubmit} className="relative">
             <div className="relative bg-gray-800 rounded-lg border border-gray-600 focus-within:border-gray-500">
               <textarea
@@ -182,6 +189,7 @@ export default function ChatInterface() {
             FloatChat can make mistakes. Consider checking important information.
           </p>
         </div>
+      </div>
       </div>
     </div>
   );
