@@ -39,6 +39,17 @@ export default function MapComponent({ onFloatClick }: MapComponentProps) {
     { id: 2, position: [19.0760, 72.8777] as [number, number], name: "Float 2" },
     { id: 3, position: [13.0827, 80.2707] as [number, number], name: "Float 3" },
     { id: 4, position: [22.5726, 88.3639] as [number, number], name: "Float 4" },
+    { id: 5, position: [15.2993, 74.1240] as [number, number], name: "Float 5" },
+    { id: 6, position: [11.2588, 75.7804] as [number, number], name: "Float 6" },
+    { id: 7, position: [8.5241, 76.9366] as [number, number], name: "Float 7" },
+    { id: 8, position: [17.6868, 83.2185] as [number, number], name: "Float 8" },
+    { id: 9, position: [21.1702, 72.8311] as [number, number], name: "Float 9" },
+    { id: 10, position: [12.9716, 77.5946] as [number, number], name: "Float 10" },
+    { id: 11, position: [18.5204, 73.8567] as [number, number], name: "Float 11" },
+    { id: 12, position: [16.7050, 74.2433] as [number, number], name: "Float 12" },
+    { id: 13, position: [14.5203, 75.7223] as [number, number], name: "Float 13" },
+    { id: 14, position: [10.8505, 76.2711] as [number, number], name: "Float 14" },
+    { id: 15, position: [9.9312, 76.2673] as [number, number], name: "Float 15" },
   ];
 
   return (
