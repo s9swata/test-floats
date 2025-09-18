@@ -72,16 +72,16 @@ export default function ChatInterface() {
   }, [inputValue]);
 
   return (
-    <div className="flex h-screen bg-gray-900 text-white">
-      {/* Left side - empty space */}
-      <div className="flex-1 bg-gray-900">
+    <div className="h-screen bg-gray-900 text-white relative">
+      {/* Main content area */}
+      <div className="w-full h-full bg-gray-900">
         {/* This space can be used for other content */}
       </div>
       
-      {/* Right side - chat interface */}
-      <div className="w-[30%] flex flex-col border-l border-gray-700">
+      {/* Floating chat interface */}
+      <div className="fixed top-4 right-4 w-96 h-[calc(100vh-2rem)] flex flex-col bg-gray-800 rounded-xl shadow-2xl border border-gray-700 overflow-hidden">
       {/* Header */}
-      <header className="border-b border-gray-700 p-4">
+      <header className="border-b border-gray-700 p-4 bg-gray-800">
         <h1 className="text-xl font-semibold text-center">FloatChat</h1>
       </header>
 
@@ -150,7 +150,7 @@ export default function ChatInterface() {
       </div>
 
       {/* Input Area */}
-      <div className="border-t border-gray-700 p-4">
+      <div className="border-t border-gray-700 p-4 bg-gray-800">
         <div className="w-full">
           <form onSubmit={handleSubmit} className="relative">
             <div className="relative bg-gray-800 rounded-lg border border-gray-600 focus-within:border-gray-500">
@@ -189,7 +189,6 @@ export default function ChatInterface() {
             FloatChat can make mistakes. Consider checking important information.
           </p>
         </div>
-      </div>
       </div>
     </div>
   );
